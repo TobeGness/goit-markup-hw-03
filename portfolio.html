@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link href=css/styles.css rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Raleway', sans-serif;
-        color: #212121
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a href="index.html" class="webstudio-logo-header"
-      ><span class="webstudio-logo-highlight">Web</span>Studio</a
-    >
+      <a href="index.html" class="webstudio-logo"
+        ><span class="webstudio-first-highlight">Web</span
+        ><span class="webstudio-secondary-highlight">Studio</span></a
+      >
       <nav>
         <ul>
           <li><a href="index.html" class="links">Agencja</a></li>
@@ -30,8 +27,10 @@
         </ul>
       </nav>
       <div>
-        <a href="mailto:info@devstudio.com" class="links">info@devstudio.com</a>
-        <a href="tel:+48111111111" class="links">+48 111 111 111</a>
+        <a href="mailto:info@devstudio.com" class="contact"
+          >info@devstudio.com</a
+        >
+        <a href="tel:+48111111111" class="contact">+48 111 111 111</a>
       </div>
     </header>
 
@@ -56,66 +55,67 @@
               <h3>Technocrack</h3>
               <p>Strona internetowa</p>
             </div>
-            <li>
-              <img
-                src="images/basketball-players.jpg"
-                alt="Grafika dwóch koszykarzy z drużyn New Orleans przeciw Golden Star."
-                width="370"
-                height="294"
-              />
-              <div>
-                <h3>Grafika New Orlean vs Golden Star</h3>
-                <p>Dizajn</p>
-              </div>
-            </li>
-            <li>
-              <img
-                src="images/seafood-restaurant-logo.jpg"
-                alt="Logo restauracji Seafood. Nazwa restauracji na tle ryby."
-                width="370"
-                height="294"
-              />
-              <div>
-                <h3>Restauracja Seafood</h3>
-                <p>Aplikacja</p>
-              </div>
-            </li>
-            <li>
-              <img
-                src="images/headphones.jpg"
-                alt="Słuchawki nauszne na jasnym tle."
-                width="370"
-                height="294"
-              />
-              <div>
-                <h3>Project Prime</h3>
-                <p>Marketing</p>
-              </div>
-            </li>
-            <li>
-              <img
-                src="images/boxes.jpg"
-                alt="Większe i mniejsze pudełko na jasnym tle."
-                width="370"
-                height="294"
-              />
-              <div>
-                <h3>Projekt Boxes</h3>
-                <p>Aplikacja</p>
-              </div>
-            </li>
-            <li>
-              <img
-                src="images/screen.jpg"
-                alt="Ekran ukazujący stronę internetową Inspiration has no Borders."
-                width="370"
-                height="294"
-              />
-              <div>
-                <h3>Inspiration has no Borders</h3>
-                <p>Strona internetowa</p>
-              </div>
-            </li>
+          </li>
+
+          <li>
+            <img
+              src="images/basketball-players.jpg"
+              alt="Grafika dwóch koszykarzy z drużyn New Orleans przeciw Golden Star."
+              width="370"
+              height="294"
+            />
+            <div>
+              <h3>Grafika New Orlean vs Golden Star</h3>
+              <p>Dizajn</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="images/seafood-restaurant-logo.jpg"
+              alt="Logo restauracji Seafood. Nazwa restauracji na tle ryby."
+              width="370"
+              height="294"
+            />
+            <div>
+              <h3>Restauracja Seafood</h3>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="images/headphones.jpg"
+              alt="Słuchawki nauszne na jasnym tle."
+              width="370"
+              height="294"
+            />
+            <div>
+              <h3>Project Prime</h3>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="images/boxes.jpg"
+              alt="Większe i mniejsze pudełko na jasnym tle."
+              width="370"
+              height="294"
+            />
+            <div>
+              <h3>Projekt Boxes</h3>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="images/screen.jpg"
+              alt="Ekran ukazujący stronę internetową Inspiration has no Borders."
+              width="370"
+              height="294"
+            />
+            <div>
+              <h3>Inspiration has no Borders</h3>
+              <p>Strona internetowa</p>
+            </div>
           </li>
           <li>
             <img
@@ -155,16 +155,24 @@
           </li>
         </ul>
       </section>
-      <footer>
-        <a href="index.html" class="webstudio-logo-footer"
-        ><span class="webstudio-logo-highlight">Web</span>Studio</a
-      >
+      <footer class="footer">
+        <a href="index.html" class="webstudio-logo"
+          ><span class="webstudio-first-highlight">Web</span
+          ><span class="webstudio-tertiary-highlight">Studio</span></a
+        >
         <address>
-          <a href="https://goo.gl/maps/fKHd9tgFYgY7uJZK6" target="_blank" class="links"
+          <a
+            href="https://goo.gl/maps/fKHd9tgFYgY7uJZK6"
+            target="_blank"
+            class="address"
             >m. Warszawa, Aleje Jerozolimskie 21</a
           >
-          <a href="mailto:info@devstudio.com" class="links">info@devstudio.com</a>
-          <a href="tel:+48111111111" class="links">+48 111 111 111</a>
+          <a href="mailto:info@devstudio.com" class="e-mail-address"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+48111111111" class="contact">+48 111 111 111</a>
         </address>
       </footer>
     </body>
+  </body>
+</html>

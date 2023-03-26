@@ -1,29 +1,94 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  color: #212121;
+}
+
+:root {
+  --primary-color: #212121;
+  --secondary-color: #2196f3;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #000000;
+  --quinary-color: #2f303a;
+  --contacts-color: #757575;
+  --buttons-color: #f5f4fa;
+}
+
+.webstudio-logo {
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.webstudio-first-highlight {
+  color: var(--secondary-color);
+}
+
+.webstudio-secondary-highlight {
+  color: var(--quaternary-color);
+}
+
+.webstudio-tertiary-highlight {
+  color: var(--tertiary-color);
+}
+
+.e-mail-address {
+  color: var(--contacts-color);
+}
+
+.e-mail-address:hover {
+  color: var(--secondary-color);
+}
+
+.e-mail-address:focus {
+  color: var(--secondary-color);
+}
+
+.contact {
+  color: var(--contacts-color);
+  text-decoration: none;
+}
+
+.contact:hover {
+  color: var(--secondary-color);
+}
+
+.contact:focus {
+  color: var(--secondary-color);
+}
+
+.address {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--quinary-color);
+}
+
+.buttons {
+  background-color: var(--buttons-color);
+  font-size: 16px;
+}
+
 .buttons:hover {
-  color: #ffffff;
-  background: #2196f3;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .buttons:focus {
-  color: #ffffff;
-  background: #2196f3;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.links {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .links:hover {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
 
 .links:focus {
-  color: #2196f3;
-}
-
-.webstudio-logo-header {
-  color: #000000;
-}
-
-.webstudio-logo-footer {
-  color: #ffffff;
-}
-
-.webstudio-logo-highlight {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
