@@ -1,0 +1,29 @@
+.buttons:hover {
+  color: #ffffff;
+  background: #2196f3;
+}
+
+.buttons:focus {
+  color: #ffffff;
+  background: #2196f3;
+}
+
+.links:hover {
+  color: #2196f3;
+}
+
+.links:focus {
+  color: #2196f3;
+}
+
+.webstudio-logo-header {
+  color: #000000;
+}
+
+.webstudio-logo-footer {
+  color: #ffffff;
+}
+
+.webstudio-logo-highlight {
+  color: #2196f3;
+}
