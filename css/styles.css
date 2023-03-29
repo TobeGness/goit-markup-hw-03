@@ -1,61 +1,79 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #212121;
 }
 
 :root {
-  --color-first: #212121;
-  --color-second: #000000;
-  --color-third: #2f303a;
-  --color-fourth: #757575;
-  --color-fifth: #ffffff;
-  --color-sixth: #f5f4fa;
-  --color-seventh: #2196f3;
-  --color-eighth: #eeeeee;
+  --color-primary: #212121;
+  --color-logo-accent: #000000;
+  --color-background: #2f303a;
+  --color-text: #757575;
+  --color-secondary: #ffffff;
+  --color-fields: #f5f4fa;
+  --color-primary-accent: #2196f3;
+  --color-border: #eeeeee;
 }
 
 address {
   font-style: normal;
 }
 
-.background-first {
-  background: var(--color-third);
+.background-titular {
+  background: var(--color-background);
 }
 
-.background-second {
-  background: var(--color-sixth);
+.background-team {
+  background: var(--color-fields);
 }
 
-.background-third {
-  background: var(--color-third);
+.background-footer {
+  background: var(--color-background);
 }
 
 .button-menu {
-  background: var(--color-sixth);
+  background: var(--color-fields);
   font-weight: 500;
   font-size: 16px;
 }
 
 .button-menu:hover {
-  background: var(--color-seventh);
-  color: var(--color-fifth);
+  background: var(--color-primary-accent);
+  color: var(--color-secondary);
 }
 
 .button-menu:focus {
-  background: var(--color-seventh);
-  color: var(--color-fifth);
+  background: var(--color-primary-accent);
+  color: var(--color-secondary);
 }
 
 .button-order {
-  background: var(--color-seventh);
-  color: var(--color-fifth);
+  background: var(--color-primary-accent);
+  color: var(--color-secondary);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
 }
 
+.heading-companies {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.heading-scope-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
 .link-contact {
-  color: var(--color-fourth);
+  color: var(--color-text);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -63,22 +81,15 @@ address {
 }
 
 .link-contact:hover {
-  color: var(--color-seventh);
+  color: var(--color-primary-accent);
 }
 
 .link-contact:focus {
-  color: var(--color-seventh);
-}
-
-.link-map {
-  color: var(--color-fifth);
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.7;
+  color: var(--color-primary-accent);
 }
 
 .link-navigation {
-  color: var(--color-first);
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -86,68 +97,57 @@ address {
 }
 
 .link-navigation:hover {
-  color: var(--color-seventh);
+  color: var(--color-primary-accent);
 }
 
 .link-navigation:focus {
-  color: var(--color-seventh);
+  color: var(--color-primary-accent);
 }
 
-.text-first {
+.link-location {
+  color: var(--color-secondary);
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--color-fourth);
 }
 
-.text-second {
+.logo-highlight-primary {
+  color: var(--color-logo-accent);
+}
+
+.logo-highlight-secondary {
+  color: var(--color-secondary);
+}
+
+.logo-webstudio {
+  color: var(--color-primary-accent);
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.text-primary {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.text-secondary {
   font-size: 16px;
   line-height: 1.9;
-  color: var(--color-fourth);
+  color: var(--color-text);
 }
 
-.title-first {
-  color: var(--color-fifth);
+.title-website {
+  color: var(--color-secondary);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
 }
 
-.title-fourth {
+.title-names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-}
-
-.title-second {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-}
-
-.title-third {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-}
-
-.title-fifth {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
-
-.webstudio-highlight-first {
-  color: var(--color-second);
-}
-
-.webstudio-highlight-second {
-  color: var(--color-fifth);
-}
-
-.webstudio-logo {
-  color: var(--color-seventh);
-  font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
 }
