@@ -1,6 +1,6 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
 body {
@@ -38,6 +38,10 @@ address {
   background: var(--color-background);
 }
 
+.background-titular-sizing {
+  padding: 100px 226px 140px 226px;
+}
+
 .background-team {
   background: var(--color-fields);
 }
@@ -69,21 +73,44 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
 }
 
 .grid-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.grid-navigation {
+.grid-navigation-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 371px;
+}
+
+.grid-header-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid-header-navigation {
+  letter-spacing: 0.02em;
   display: flex;
   flex-basis: 254px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 46px;
-}
-
-.grid-navigation-item {
-  flex-basis: calc((100% - 92px) / 3);
 }
 
 .heading-companies {
@@ -104,12 +131,23 @@ address {
   line-height: 1.2;
 }
 
-.link-contact {
+.link-contact-email {
+  letter-spacing: 0.02em;
   color: var(--color-text);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+}
+
+.link-contact-phone {
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  margin-left: 50px;
 }
 
 .link-contact:hover {
@@ -159,6 +197,7 @@ address {
   text-decoration: none;
   width: 145px;
   height: 31px;
+  letter-spacing: 0.03em;
 }
 
 .list-style-none {
@@ -182,6 +221,9 @@ address {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  max-width: 696px;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .title-names {

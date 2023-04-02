@@ -22,35 +22,39 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container grid-header">
         <a href="index.html" class="logo-webstudio"
           ><span>Web</span><span class="logo-highlight-primary">Studio</span></a
         >
-        <nav>
-          <ul class="grid-navigation list-style-none">
-            <li class="grid-navigation-item">
-              <a href="index.html" class="link-navigation">Agencja</a>
-            </li>
-            <li class="grid-navigation-item">
-              <a href="portfolio.html" class="link-navigation">Portfolio</a>
-            </li>
-            <li class="grid-navigation-item">
-              <a href="#" class="link-navigation">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <a href="mailto:info@devstudio.com" class="link-contact"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+48111111111" class="link-contact">+48 111 111 111</a>
+        <div class="grid-navigation-contact">
+          <nav>
+            <ul class="grid-header-navigation list-style-none">
+              <li>
+                <a href="index.html" class="link-navigation">Agencja</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="link-navigation">Portfolio</a>
+              </li>
+              <li>
+                <a href="#address-anchor" class="link-navigation">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="grid-header-contact">
+            <a href="mailto:info@devstudio.com" class="link-contact-email"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+48111111111" class="link-contact-phone"
+              >+48 111 111 111</a
+            >
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="background-titular section">
-        <div class="container">
+      <section class="section background-titular">
+        <div class="container background-titular-sizing">
           <h1 class="title-website">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
@@ -185,7 +189,7 @@
           ><span>Web</span
           ><span class="logo-highlight-secondary">Studio</span></a
         >
-        <address>
+        <address id="address-anchor">
           <a
             href="https://goo.gl/maps/fKHd9tgFYgY7uJZK6"
             target="_blank"
