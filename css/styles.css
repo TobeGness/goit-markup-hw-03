@@ -34,6 +34,11 @@ address {
   font-style: normal;
 }
 
+.address-sizing {
+  width: 246px;
+  margin-top: 20px;
+}
+
 .background-titular {
   background: var(--color-background);
 }
@@ -46,25 +51,37 @@ address {
   background: var(--color-fields);
 }
 
+.background-header {
+  padding: 32px 0px;
+  border: 1px solid #ececec;
+}
+
 .background-footer {
   background: var(--color-background);
+  padding: 60px 0px;
 }
 
 .button-menu {
   background: var(--color-fields);
   font-weight: 500;
   font-size: 16px;
+  border: 0px;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .button-menu:hover {
   background: var(--color-primary-accent);
   color: var(--color-secondary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-menu:focus {
   background: var(--color-primary-accent);
   color: var(--color-secondary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-order {
@@ -81,9 +98,19 @@ address {
   margin-top: 30px;
 }
 
+.card-padding {
+  padding: 30px 0px;
+}
+
+.card-team-member {
+  background: var(--color-secondary);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .grid-header {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -91,7 +118,6 @@ address {
 
 .grid-navigation-contact {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 371px;
@@ -99,7 +125,6 @@ address {
 
 .grid-header-contact {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -113,6 +138,55 @@ address {
   gap: 46px;
 }
 
+.grid-main-titular {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.grid-main-scope {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1170px;
+}
+
+.grid-main-team {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.grid-primary {
+  padding: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.grid-footer {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.grid-button-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 572px;
+  flex-basis: calc((100% - 16px) / 5);
+}
+
 .heading-companies {
   font-weight: 700;
   font-size: 18px;
@@ -120,18 +194,22 @@ address {
 }
 
 .heading-primary {
+  width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 
 .heading-scope-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
-.link-contact-email {
+.link-header-contact-email {
   letter-spacing: 0.02em;
   color: var(--color-text);
   text-decoration: none;
@@ -140,7 +218,7 @@ address {
   line-height: 1.1;
 }
 
-.link-contact-phone {
+.link-header-contact-phone {
   letter-spacing: 0.02em;
   color: var(--color-text);
   text-decoration: none;
@@ -150,11 +228,29 @@ address {
   margin-left: 50px;
 }
 
-.link-contact:hover {
+.link-footer-contact-email {
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.link-footer-contact-phone {
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.link-highlight:hover {
   color: var(--color-primary-accent);
 }
 
-.link-contact:focus {
+.link-higlight:focus {
   color: var(--color-primary-accent);
 }
 
@@ -208,12 +304,25 @@ address {
   font-size: 14px;
   line-height: 1.7;
   color: var(--color-text);
+  width: 270px;
+  margin-top: 10px;
+  letter-spacing: 0.03em;
 }
 
 .text-secondary {
   font-size: 16px;
   line-height: 1.9;
   color: var(--color-text);
+  letter-spacing: 0.03em;
+}
+
+.text-job-position {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-text);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .title-website {
@@ -230,4 +339,7 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 130px;
 }
