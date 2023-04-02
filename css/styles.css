@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -12,11 +17,6 @@ body {
   --color-fields: #f5f4fa;
   --color-primary-accent: #2196f3;
   --color-border: #eeeeee;
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 .container {
@@ -50,6 +50,7 @@ address {
   background: var(--color-fields);
   font-weight: 500;
   font-size: 16px;
+  border-radius: 4px;
 }
 
 .button-menu:hover {
@@ -68,6 +69,21 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+}
+
+.grid-header {
+}
+
+.grid-navigation {
+  display: flex;
+  flex-basis: 254px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 46px;
+}
+
+.grid-navigation-item {
+  flex-basis: calc((100% - 92px) / 3);
 }
 
 .heading-companies {
@@ -143,6 +159,10 @@ address {
   text-decoration: none;
   width: 145px;
   height: 31px;
+}
+
+.list-style-none {
+  list-style-type: none;
 }
 
 .text-primary {
