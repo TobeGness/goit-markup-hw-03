@@ -18,6 +18,18 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
 address {
   font-style: normal;
 }
@@ -56,13 +68,6 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .heading-companies {
@@ -136,6 +141,8 @@ address {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  width: 145px;
+  height: 31px;
 }
 
 .text-primary {
