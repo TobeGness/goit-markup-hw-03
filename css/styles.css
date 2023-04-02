@@ -14,6 +14,10 @@ body {
   --color-border: #eeeeee;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
 address {
   font-style: normal;
 }
@@ -52,6 +56,13 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .heading-companies {
