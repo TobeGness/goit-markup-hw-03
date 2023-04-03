@@ -62,7 +62,7 @@ address {
 }
 
 .background-portfolio {
-  background: var(--color-border);
+  border: var(--color-border);
 }
 
 .button-menu {
