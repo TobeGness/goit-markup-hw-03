@@ -1,13 +1,3 @@
-* {
-  padding: 0 auto;
-  margin: 0 auto;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-}
-
 :root {
   --color-primary: #212121;
   --color-logo-accent: #000000;
@@ -19,6 +9,30 @@ body {
   --color-border: #eeeeee;
 }
 
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -26,34 +40,151 @@ body {
   padding: 0 15px;
 }
 
-.section {
-  padding: 94px 0px;
+/* HEADER */
+
+.header {
+  padding: 24px 0 25px;
+  border: 1px solid #ececec;
 }
 
-address {
-  font-style: normal;
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.header-menu-list {
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+}
+
+.header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.logo {
+  color: var(--color-primary-accent);
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  width: 145px;
+  height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.studio-black {
+  color: var(--color-logo-accent);
+}
+
+.studio-white {
+  color: var(--color-secondary);
+}
+
+.header-menu-item {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.header-menu-item:is(:hover, :focus) {
+  color: var(--color-primary-accent);
+}
+
+.header-contacts-item {
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.header-contacts-item:is(:hover, :focus) {
+  color: var(--color-primary-accent);
+}
+
+/* HEADER */
+
+/* HERO */
+
+.hero {
+  background: var(--color-background);
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero-title {
+  margin: 0 auto;
+  color: var(--color-secondary);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636;
+  max-width: 696px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.hero-btn {
+  background: var(--color-primary-accent);
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 41px 10px 42px;
+  margin-top: 30px;
+  letter-spacing: 0.06em;
+}
+
+/* HERO */
+
+/* ARTICLES */
+
+/* ARTICLES */
+
+/* SERVICES */
+
+.services {
+  margin-top: -94px;
+}
+
+/* SERVICES */
+
+/* TEAM */
+
+/* TEAM */
+
+/* FOOTER */
+
+/* FOOTER */
+
+/* PORTFOLIO */
+
+/* PORTFOLIO */
 
 .address-sizing {
   width: 246px;
   margin-top: 20px;
 }
 
-.background-titular {
-  background: var(--color-background);
-}
-
-.background-titular-sizing {
-  padding: 100px 226px 140px 226px;
-}
-
 .background-team {
   background: var(--color-fields);
-}
-
-.background-header {
-  padding: 32px 0px;
-  border: 1px solid #ececec;
 }
 
 .background-footer {
@@ -88,20 +219,6 @@ address {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-order {
-  background: var(--color-primary-accent);
-  color: var(--color-secondary);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0px;
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
-}
-
 .card-padding {
   padding: 30px 0px;
 }
@@ -117,40 +234,11 @@ address {
   padding: 20px 24px;
 }
 
-.grid-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .grid-navigation-contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 371px;
-}
-
-.grid-header-contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.grid-header-navigation {
-  letter-spacing: 0.02em;
-  display: flex;
-  flex-basis: 254px;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 46px;
-}
-
-.grid-main-titular {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .grid-main-scope {
@@ -222,25 +310,6 @@ address {
   text-align: center;
 }
 
-.link-header-contact-email {
-  letter-spacing: 0.02em;
-  color: var(--color-text);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-}
-
-.link-header-contact-phone {
-  letter-spacing: 0.02em;
-  color: var(--color-text);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  margin-left: 50px;
-}
-
 .link-footer-contact-email {
   letter-spacing: 0.02em;
   color: var(--color-text);
@@ -259,54 +328,11 @@ address {
   line-height: 1.1;
 }
 
-.link-highlight:hover {
-  color: var(--color-primary-accent);
-}
-
-.link-higlight:focus {
-  color: var(--color-primary-accent);
-}
-
-.link-navigation {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-}
-
-.link-navigation:hover {
-  color: var(--color-primary-accent);
-}
-
-.link-navigation:focus {
-  color: var(--color-primary-accent);
-}
-
 .link-location {
   color: var(--color-secondary);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
-}
-
-.logo-highlight-primary {
-  color: var(--color-logo-accent);
-}
-
-.logo-highlight-secondary {
-  color: var(--color-secondary);
-}
-
-.logo-webstudio {
-  color: var(--color-primary-accent);
-  font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-  width: 145px;
-  height: 31px;
-  letter-spacing: 0.03em;
 }
 
 .list-style-none {
@@ -336,16 +362,6 @@ address {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 10px;
-}
-
-.title-website {
-  color: var(--color-secondary);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  max-width: 696px;
-  letter-spacing: 0.06em;
-  text-align: center;
 }
 
 .title-names {
