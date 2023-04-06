@@ -312,63 +312,62 @@ img {
 
 /* PORTFOLIO */
 
-/* PORTFOLIO */
-
-.background-portfolio {
+.portfolio-wrapper {
   border: var(--color-light);
 }
 
-.button-menu {
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.portfolio-filters-btn {
   background: var(--color-fields);
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px;
 }
 
-.button-menu:hover {
+.portfolio-filters-buttons:is(:hover, :focus) {
   background: var(--color-primary-accent);
   color: var(--color-secondary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-menu:focus {
-  background: var(--color-primary-accent);
-  color: var(--color-secondary);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.card-portfolio-padding {
-  padding: 20px 24px;
-}
-
-.grid-button-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  width: 572px;
-}
-
-.grid-cards-menu {
+.portfolio-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
 }
 
-.heading-companies {
+.portfolio-projects-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 
-.text-secondary {
+.portfolio-projects-text {
   font-size: 16px;
   line-height: 1.9;
   color: var(--color-text);
   letter-spacing: 0.03em;
 }
+
+.portfolio-projects-sizing {
+  padding: 20px 24px;
+  border-left: 1px solid var(--color-light);
+  border-right: 1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-light);
+}
+
+/* PORTFOLIO */
