@@ -175,7 +175,6 @@ img {
 }
 
 .articles-items {
-  padding: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -365,9 +364,8 @@ img {
 
 .portfolio-projects-sizing {
   padding: 20px 24px;
-  border-left: 1px solid var(--color-light);
-  border-right: 1px solid var(--color-light);
-  border-bottom: 1px solid var(--color-light);
+  border: 1px solid var(--color-light);
+  border-top: none;
 }
 
 /* PORTFOLIO */
